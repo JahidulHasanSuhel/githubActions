@@ -1,0 +1,21 @@
+name: Multijob Workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  first-Workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: first step
+        run: echo "Hello first workflow"
+
+  second-Workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: first step
+        run: echo "Hello second workflow"
