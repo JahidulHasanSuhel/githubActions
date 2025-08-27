@@ -5,8 +5,7 @@ on:
     inputs:
       name:
         description: 'Enter your name'
-        required: true
-        default: 'Unnamed'
+        required: true   
 
 jobs:
   get-value-workflow:
