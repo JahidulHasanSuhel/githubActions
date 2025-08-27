@@ -7,7 +7,7 @@ on:
 
 jobs:
   conditional-workflow:
-  runs-on: ubuntu-latest
-  steps:
-    - name: build backend img
-      run: echo "backend commad..."
+    runs-on: ubuntu-latest
+    steps:
+      - name: build backend img
+        run: echo "backend commad..."
