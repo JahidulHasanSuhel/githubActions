@@ -1,4 +1,4 @@
-name: Multijob Workflow
+name: Dependent Multijob Workflow
 
 on:
   workflow_dispatch:
@@ -13,6 +13,15 @@ jobs:
 
   second-Workflow:
     runs-on: ubuntu-latest
+    needs: [first-workflow]
+
+    steps:
+      - name: second workflow job
+        run: echo "Hello second workflow"
+
+  third-Workflow:
+    runs-on: ubuntu-latest
+    needs: [first-workflow, second-workflow]
 
     steps:
       - name: second workflow job
