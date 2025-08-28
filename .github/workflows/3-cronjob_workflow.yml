@@ -2,7 +2,7 @@ name: Cron Workflow
 
 on:
   schedule:
-    - cron: '*/5 * * * *' #runs in every 5 mins
+    # - cron: '*/5 * * * *' #runs in every 5 mins
 
 jobs:
   first-Workflow:
