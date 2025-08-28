@@ -3,12 +3,15 @@ name: Predefined workflow
 on:
   workflow_dispatch:
 
-
 jobs:
   predefined-workflow:
     runs-on: ubuntu-latest
-    
 
     steps:
-      - name: Nodejs version
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'   # You can set 16, 18, 20 etc.
+
+      - name: Show Node.js version
         run: node -v
