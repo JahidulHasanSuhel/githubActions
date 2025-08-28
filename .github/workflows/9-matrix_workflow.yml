@@ -21,4 +21,4 @@ jobs:
       
       - name: print all matrix
         run: |
-          echo "Matrix is: ${{matrix.uppercase}} ${{matrix.lowercase}}"
+          echo " Matrix is: ${{matrix.uppercase}} ${{matrix.lowercase}} "
