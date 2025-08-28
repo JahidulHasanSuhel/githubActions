@@ -1,10 +1,10 @@
-name: Predefined workflow
+name: Matrix workflow
 
 on:
   workflow_dispatch:
 
 jobs:
-  predefined-workflow:
+  matrix-workflow:
     runs-on: ubuntu-latest
 
     strategy:
