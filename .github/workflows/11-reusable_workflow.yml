@@ -1,0 +1,21 @@
+name: Reusable Workflow
+
+on:
+  workflow_call:
+
+jobs:
+  reusable-workflow:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: img building
+        run: |
+          echo "Docker img Bulding"
+
+      - name: img pushing
+        run: |
+          echo "Docker img pushing"
+        
